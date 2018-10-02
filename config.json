@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "favorite_coffee": {
+      "defaultValue": {
+        "value": "coolbeans"
+      }
+    }
+  },
+  "version": {
+    "versionNumber": "1",
+    "updateTime": "2018-10-01T14:43:37.774Z",
+    "updateUser": {
+      "email": "matthewsjegan@gmail.com"
+    },
+    "updateOrigin": "CONSOLE",
+    "updateType": "INCREMENTAL_UPDATE"
+  }
+}
