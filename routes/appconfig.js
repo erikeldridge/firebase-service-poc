@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/', function(req, res, next){
-  console.log(req.body.read);
+  console.log(req.body.read || undefined);
   res.send({msg: req.body});
 });
 module.exports = router;
