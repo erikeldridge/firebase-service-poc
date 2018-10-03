@@ -14,12 +14,12 @@
        "key":"favorite_coffee",
        "value_options":[
          {
-           "value":"Welcome to this sample app again. default... testing. 1.2.3.4.5.6"
+           "value":"Welcome to this sample app again. default... testing. 1.2.3.4.5.6.7"
          }
        ]
      },
      {
-       "key":"welcome_message_caps",
+       "key":"welcome_message",
        "value_options":[
          {
            "value":"false"
