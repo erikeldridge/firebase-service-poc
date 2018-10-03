@@ -13,11 +13,8 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-
-  console.log("get config");
-
   dir = exec("git pull", function (err, stdout, stderr) {
-    console.log('git pull');
+    console.log('Git pull latest config');
     if (err) {
       // should have err.code here?  
     }
