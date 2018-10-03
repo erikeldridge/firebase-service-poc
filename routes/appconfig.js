@@ -8,23 +8,8 @@ var exec = require('child_process').exec;
 router.get('/', function (req, res, next) {
   // res.send('get config');
 
-  console.log("get config");
+  res.status(200).send('get remote config');
 
-  dir = exec("git pull", function (err, stdout, stderr) {
-    console.log('git pull');
-    if (err) {
-      // should have err.code here?  
-    }
-    console.log(stdout);
-  });
-
-  dir.on('exit', function (code) {
-    // exit code is code
-
-    config.update().then(function () {
-      res.status(200).send('get complete');
-    });
-  });
 });
 
 router.post('/', function (req, res, next) {
