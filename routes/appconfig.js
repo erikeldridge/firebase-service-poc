@@ -45,6 +45,8 @@ router.post('/', function (req, res, next) {
     config.update().then(function () {
       res.status(200).send('get complete');
     });
+
+    res.status(200).send('get config complete');
   });
 
 
