@@ -34,42 +34,5 @@ router.post('/', function (req, res, next) {
     res.status(200).send('get config complete');
   });
 
-
-  // console.log(req.body.read || undefined);
-
-  // // remoteConfig.update(body).then((data) => {
-  // //   res.send({ msg: req.body });
-  // // });
-
-  // var json = {
-  //   parameters: [
-  //     {
-  //       key: "favorite_coffee",
-  //       value_options: [
-  //         {
-  //           "value": "Welcome to this sample app again. Update.sdfs"
-  //         }
-  //       ]
-  //     },
-  //     {
-  //       key: "welcome_message_caps",
-  //       value_options: [
-  //         {
-  //           value: "yea cool"
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // }
-
-  // // config.update(json).then(function () {
-  // //   res.status(200).send('update complete');
-  // // }, function (err) {
-  // //   res.status(500).send(err);
-  // // })
-
-  // res.send('cool');
-
-
 });
 module.exports = router;
