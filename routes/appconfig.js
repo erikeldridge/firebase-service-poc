@@ -29,40 +29,59 @@ router.get('/', function (req, res, next) {
 
 router.post('/', function (req, res, next) {
 
-  console.log(req.body.read || undefined);
+  console.log("get config");
 
-  // remoteConfig.update(body).then((data) => {
-  //   res.send({ msg: req.body });
-  // });
+  dir = exec("git pull", function (err, stdout, stderr) {
+    console.log('git pull');
+    if (err) {
+      // should have err.code here?  
+    }
+    console.log(stdout);
+  });
 
-  var json = {
-    parameters: [
-      {
-        key: "favorite_coffee",
-        value_options: [
-          {
-            "value": "Welcome to this sample app again. Update.sdfs"
-          }
-        ]
-      },
-      {
-        key: "welcome_message_caps",
-        value_options: [
-          {
-            value: "yea cool"
-          }
-        ]
-      }
-    ]
-  }
+  dir.on('exit', function (code) {
+    // exit code is code
 
-  // config.update(json).then(function () {
-  //   res.status(200).send('update complete');
-  // }, function (err) {
-  //   res.status(500).send(err);
-  // })
+    config.update().then(function () {
+      res.status(200).send('get complete');
+    });
+  });
 
-  res.send('cool');
+
+  // console.log(req.body.read || undefined);
+
+  // // remoteConfig.update(body).then((data) => {
+  // //   res.send({ msg: req.body });
+  // // });
+
+  // var json = {
+  //   parameters: [
+  //     {
+  //       key: "favorite_coffee",
+  //       value_options: [
+  //         {
+  //           "value": "Welcome to this sample app again. Update.sdfs"
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       key: "welcome_message_caps",
+  //       value_options: [
+  //         {
+  //           value: "yea cool"
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // }
+
+  // // config.update(json).then(function () {
+  // //   res.status(200).send('update complete');
+  // // }, function (err) {
+  // //   res.status(500).send(err);
+  // // })
+
+  // res.send('cool');
 
 
 });
