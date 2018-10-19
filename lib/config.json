@@ -1,22 +1,16 @@
 {
-  "parameters":[
-    {
-      "key":"welcome_message",
-      "value_options":[
-        {
-          "value":"Welcome to this sample app."
-        }
-      ]
-    },
-    {
-      "key":"welcome_message_caps",
-      "value_options":[
-        {
-          "value":"false"
-        }
-      ]
-    }
-  ],
+ "parameters": {                                                               
+    "welcome_message": {                                                        
+      "defaultValue": {                                                         
+        "value": "Welcome to this sample app test"                                   
+      }                                                                         
+    },                                                                          
+    "welcome_message_caps": {                                                   
+      "defaultValue": {                                                         
+        "value": "false"                                                        
+      }                                                                         
+    }                                                                           
+  },   
   "version":{
     "version_number": "42",
     "update_time":"2018-05-11T18:46:40Z",
