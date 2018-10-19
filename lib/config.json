@@ -1,13 +1,26 @@
 {
- "parameters": {                                                               
-    "welcome_message": {                                                        
-      "defaultValue": {                                                         
-        "value": "Welcome to this sample app "                                   
-      }                                                                         
-    },                                                                          
-    "welcome_message_caps": {                                                   
-      "defaultValue": {                                                         
-        "value": "false"                                                        
-      }                                                                         
-    }                                                                           
+  "parameters": {
+    "welcome_message": {
+      "defaultValue": {
+        "value": "Welcome to this sample app test"
+      }
+    },
+    "welcome_message_caps": {
+      "defaultValue": {
+        "value": "false"
+      }
+    }
+  },
+  "version": {
+    "version_number": "42",
+    "update_time": "2018-05-11T18:46:40Z",
+    "update_user": {
+      "name": "Jane Developer",
+      "email": "jane@developer.org",
+      "imageUrl": "http://image.google.com/path-to-profile-photo-for-jane"
+    },
+    "description": "Adding welcome messages",
+    "update_origin": "CONSOLE",
+    "update_type": "INCREMENTAL_UPDATE"
   }
+}
