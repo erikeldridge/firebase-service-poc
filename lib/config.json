@@ -2,7 +2,7 @@
  "parameters": {                                                               
     "welcome_message": {                                                        
       "defaultValue": {                                                         
-        "value": "Welcome to this sample app test"                                   
+        "value": "Welcome to this sample app "                                   
       }                                                                         
     },                                                                          
     "welcome_message_caps": {                                                   
